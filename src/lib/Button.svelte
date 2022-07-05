@@ -27,9 +27,9 @@
 
 		&.size {
 			&-small {
-				height: 32px;
+				height: 28px;
 				font-size: 12px;
-				line-height: 32px;
+				line-height: 28px;
 				padding: 0 16px;
 			}
 
@@ -37,21 +37,21 @@
         height: 36px;
         font-size: 14px;
         line-height: 36px;
-        padding: 0 24px;
+        padding: 0 20px;
       }
 
 			&-default {
-				height: 2.5rem;
+				height: 44px;
 				font-size: 14px;
-				line-height: 48px;
+				line-height: 44px;
 				padding: 0 1.5rem;
 			}
 
 			&-large {
-				height: 64px;
+				height: 54px;
 				font-size: 18px;
-				line-height: 64px;
-				padding: 0 20px;
+				line-height: 54px;
+				padding: 0 32px;
 			}
 		}
 
