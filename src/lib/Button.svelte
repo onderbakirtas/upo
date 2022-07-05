@@ -1,5 +1,5 @@
 <script lang="ts">
-	type TSize = 'default' | 'small' | 'large';
+	type TSize = 'default' | 'small' | 'medium' | 'large';
 	type TTheme = 'default' | 'blue' | 'green' | 'red' | 'orange';
 
 	export let text: string;
@@ -32,6 +32,13 @@
 				line-height: 32px;
 				padding: 0 16px;
 			}
+
+      &-medium {
+        height: 36px;
+        font-size: 14px;
+        line-height: 36px;
+        padding: 0 24px;
+      }
 
 			&-default {
 				height: 2.5rem;
