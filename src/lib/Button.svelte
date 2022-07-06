@@ -7,7 +7,7 @@
 	export let theme: TTheme = 'default';
 </script>
 
-<button class={`size-${size} is-${theme}`}>{text}</button>
+<button class={`size-${size} is-${theme}`} on:click>{text}</button>
 
 <style lang="scss">
 	button {
@@ -21,9 +21,9 @@
 		font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell,
 			'Open Sans', 'Helvetica Neue', sans-serif;
 
-    &:hover {
-      transition: 0.1s;
-    }
+		&:hover {
+			transition: 0.1s;
+		}
 
 		&.size {
 			&-small {
@@ -33,12 +33,12 @@
 				padding: 0 16px;
 			}
 
-      &-medium {
-        height: 36px;
-        font-size: 14px;
-        line-height: 36px;
-        padding: 0 20px;
-      }
+			&-medium {
+				height: 36px;
+				font-size: 14px;
+				line-height: 36px;
+				padding: 0 20px;
+			}
 
 			&-default {
 				height: 44px;
