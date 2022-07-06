@@ -1,10 +1,9 @@
 <script lang="ts">
-	type TSize = 'default' | 'small' | 'medium' | 'large';
-	type TTheme = 'default' | 'blue' | 'green' | 'red' | 'orange';
+	import type { Size, Theme } from './types';
 
 	export let text: string;
-	export let size: TSize = 'default';
-	export let theme: TTheme = 'default';
+	export let size: Size = 'default';
+	export let theme: Theme = 'default';
 </script>
 
 <button class={`size-${size} is-${theme}`} on:click>{text}</button>
