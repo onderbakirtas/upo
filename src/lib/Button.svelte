@@ -25,6 +25,10 @@
 			transition: 0.1s;
 		}
 
+		&:active {
+			transform: translateY(1px);
+		}
+
 		&.size {
 			&-small {
 				height: 28px;
