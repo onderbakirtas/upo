@@ -2,13 +2,15 @@
 	import type { Size, Theme } from './types';
 
 	export let text: string;
-	export let size: Size = 'default';
+	export let size: Size = 'medium';
 	export let theme: Theme = 'default';
 </script>
 
 <button class={`size-${size} is-${theme}`} on:click>{text}</button>
 
 <style lang="scss">
+	@import './styles/variables/sizes.scss';
+
 	button {
 		display: inline-flex;
 		align-items: center;
@@ -16,12 +18,13 @@
 		cursor: pointer;
 		border: 1px solid transparent;
 		border-radius: 0.25rem;
-		font-weight: bold;
+		font-weight: 600;
+		line-height: 1;
 		font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell,
 			'Open Sans', 'Helvetica Neue', sans-serif;
 
 		&:hover {
-			transition: 0.1s;
+			transition: 0.15s;
 		}
 
 		&:active {
@@ -29,32 +32,34 @@
 		}
 
 		&.size {
+			&-tiny {
+				padding: 0 14px;
+				font-size: $text-tiny;
+				height: $height-tiny;
+			}
+
 			&-small {
-				height: 28px;
-				font-size: 12px;
-				line-height: 28px;
-				padding: 0 16px;
+				padding: 0 18px;
+				font-size: $text-small;
+				height: $height-small;
 			}
 
 			&-medium {
-				height: 36px;
-				font-size: 14px;
-				line-height: 36px;
-				padding: 0 20px;
-			}
-
-			&-default {
-				height: 44px;
-				font-size: 14px;
-				line-height: 44px;
-				padding: 0 1.5rem;
+				padding: 0 22px;
+				font-size: $text-medium;
+				height: $height-medium;
 			}
 
 			&-large {
-				height: 54px;
-				font-size: 18px;
-				line-height: 54px;
+				padding: 0 26px;
+				font-size: $text-large;
+				height: $height-large;
+			}
+
+			&-xlarge {
 				padding: 0 32px;
+				font-size: $text-xlarge;
+				height: $height-xlarge;
 			}
 		}
 

@@ -1,7 +1,7 @@
 <script lang="ts">
 	import type { Size } from './types';
 
-	export let size: Size = 'default';
+	export let size: Size = 'medium';
 </script>
 
 <div class={`input size-${size}`}>
@@ -9,56 +9,49 @@
 </div>
 
 <style lang="scss">
+	@import './styles/variables/sizes.scss';
+
 	.input {
 		width: 100%;
 
 		&.size {
 			&-tiny {
-				height: 26px;
-				font-size: 10px;
-				line-height: 26px;
-
+				font-size: $text-tiny;
+				height: $height-tiny;
 				& > input {
-					padding: 0 0.5rem;
+					padding: 0 10px;
 				}
 			}
 
 			&-small {
-				height: 30px;
-				font-size: 12px;
-				line-height: 30px;
-
+				font-size: $text-small;
+				height: $height-small;
 				& > input {
-					padding: 0 0.625rem;
-				}
-			}
-
-			&-default {
-				height: 36px;
-				font-size: 14px;
-				line-height: 36px;
-
-				& > input {
-					padding: 0 0.75rem;
+					padding: 0 12px;
 				}
 			}
 
 			&-medium {
-				height: 44px;
-				font-size: 14px;
-
+				font-size: $text-medium;
+				height: $height-medium;
 				& > input {
-					padding: 0 1rem;
+					padding: 0 14px;
 				}
 			}
 
 			&-large {
-				height: 54px;
-				font-size: 18px;
-				line-height: 54px;
-
+				font-size: $text-large;
+				height: $height-large;
 				& > input {
-					padding: 0 1.25rem;
+					padding: 0 16px;
+				}
+			}
+
+			&-xlarge {
+				font-size: $text-xlarge;
+				height: $height-xlarge;
+				& > input {
+					padding: 0 20px;
 				}
 			}
 		}
@@ -72,6 +65,12 @@
 			font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell,
 				'Open Sans', 'Helvetica Neue', sans-serif;
 			font-size: inherit;
+
+			&:hover,
+			&:focus,
+			&:active {
+				transition: 0.15s;
+			}
 
 			&:focus {
 				border-color: royalblue;
