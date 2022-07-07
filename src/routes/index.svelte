@@ -39,6 +39,10 @@
 </fieldset>
 
 <style lang="scss">
+	:global(*) {
+		box-sizing: border-box;
+	}
+
 	fieldset {
 		padding: 1rem;
 
