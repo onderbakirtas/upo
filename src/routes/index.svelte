@@ -28,7 +28,7 @@
 </fieldset>
 
 <fieldset>
-	<legend>Input</legend>
+	<legend>Inputs</legend>
 	<div class="inputs">
 		<Input size="tiny" />
 		<Input size="small" />
