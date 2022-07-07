@@ -2,10 +2,11 @@
 	import type { Size } from './types';
 
 	export let size: Size = 'medium';
+	export let placeholder: string = '';
 </script>
 
 <div class={`input size-${size}`}>
-	<input type="text" />
+	<input type="text" {placeholder} />
 </div>
 
 <style lang="scss">
