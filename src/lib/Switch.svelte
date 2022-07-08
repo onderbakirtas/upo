@@ -43,30 +43,33 @@
 				display: block;
 				border-radius: 4px;
 				transition: 0.15s;
+        box-sizing: border-box;
 			}
 
 			&::before {
 				display: block;
-				width: 36px;
+				width: 37px;
 				height: 20px;
-				background-color: silver;
+				background-color: lightgray;
+        border: 1px solid silver;
 				position: relative;
 				z-index: 1;
 			}
 
 			&::after {
-				height: 12px;
-				width: 12px;
+				height: 14px;
+				width: 14px;
 				background-color: white;
 				position: absolute;
-				left: 4px;
-				top: 4px;
+				left: 3px;
+				top: 3px;
 				z-index: 2;
 			}
 
 			&:checked {
 				&::before {
 					background-color: royalblue;
+          border-color: royalblue;
 				}
 
 				&::after {
