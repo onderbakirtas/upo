@@ -50,8 +50,8 @@
 				display: block;
 				width: 37px;
 				height: 20px;
-				background-color: lightgray;
-        border: 1px solid silver;
+				background-color: gainsboro;
+        border: 1px solid lightgray;
 				position: relative;
 				z-index: 1;
 			}
@@ -60,6 +60,7 @@
 				height: 14px;
 				width: 14px;
 				background-color: white;
+        border: 1px solid lightgray;
 				position: absolute;
 				left: 3px;
 				top: 3px;
@@ -74,6 +75,7 @@
 
 				&::after {
 					left: 20px;
+          border-color: transparent;
 				}
 			}
 		}
