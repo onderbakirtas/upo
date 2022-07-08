@@ -3,10 +3,11 @@
 
 	export let size: Size = 'medium';
 	export let placeholder: string = '';
+	export let value: string = '';
 </script>
 
 <div class={`input size-${size}`}>
-	<input type="text" {placeholder} />
+	<input type="text" {placeholder} bind:value />
 </div>
 
 <style lang="scss">
