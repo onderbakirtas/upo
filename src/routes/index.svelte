@@ -19,22 +19,18 @@
 <fieldset>
 	<legend>Button Sizes</legend>
 	<div class="buttons">
-		<Button text="Tiny" size="tiny" theme="blue" />
 		<Button text="Small" size="small" theme="blue" />
 		<Button text="Medium" size="medium" theme="blue" />
 		<Button text="Large" size="large" theme="blue" />
-		<Button text="Xlarge" size="xlarge" theme="blue" />
 	</div>
 </fieldset>
 
 <fieldset>
 	<legend>Inputs</legend>
 	<div class="inputs">
-		<Input size="tiny" />
 		<Input size="small" />
 		<Input size="medium" />
 		<Input size="large" />
-		<Input size="xlarge" />
 	</div>
 </fieldset>
 

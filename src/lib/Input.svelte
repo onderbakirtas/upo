@@ -16,19 +16,11 @@
 		width: 100%;
 
 		&.size {
-			&-tiny {
-				font-size: $text-tiny;
-				height: $height-tiny;
-				& > input {
-					padding: 0 10px;
-				}
-			}
-
 			&-small {
 				font-size: $text-small;
 				height: $height-small;
 				& > input {
-					padding: 0 12px;
+					padding: 0 10px;
 				}
 			}
 
@@ -36,7 +28,7 @@
 				font-size: $text-medium;
 				height: $height-medium;
 				& > input {
-					padding: 0 14px;
+					padding: 0 15px;
 				}
 			}
 
@@ -44,21 +36,13 @@
 				font-size: $text-large;
 				height: $height-large;
 				& > input {
-					padding: 0 16px;
-				}
-			}
-
-			&-xlarge {
-				font-size: $text-xlarge;
-				height: $height-xlarge;
-				& > input {
 					padding: 0 20px;
 				}
 			}
 		}
 
 		& > input {
-      display: block;
+			display: block;
 			width: 100%;
 			height: 100%;
 			border-radius: 0.25rem;

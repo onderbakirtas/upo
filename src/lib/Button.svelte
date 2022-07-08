@@ -6,7 +6,7 @@
 	export let theme: Theme = 'default';
 </script>
 
-<button class={`size-${size} is-${theme}`} on:click>{text}</button>
+<button type="button" class={`size-${size} is-${theme}`} on:click>{text}</button>
 
 <style lang="scss">
 	@import './styles/variables/sizes.scss';
@@ -32,34 +32,22 @@
 		}
 
 		&.size {
-			&-tiny {
-				padding: 0 14px;
-				font-size: $text-tiny;
-				height: $height-tiny;
-			}
-
 			&-small {
-				padding: 0 18px;
+				padding: 0 20px;
 				font-size: $text-small;
 				height: $height-small;
 			}
 
 			&-medium {
-				padding: 0 22px;
+				padding: 0 24px;
 				font-size: $text-medium;
 				height: $height-medium;
 			}
 
 			&-large {
-				padding: 0 26px;
+				padding: 0 30px;
 				font-size: $text-large;
 				height: $height-large;
-			}
-
-			&-xlarge {
-				padding: 0 32px;
-				font-size: $text-xlarge;
-				height: $height-xlarge;
 			}
 		}
 
