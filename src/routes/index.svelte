@@ -1,6 +1,7 @@
 <script>
 	import Button from '$lib/Button.svelte';
 	import Input from '$lib/Input.svelte';
+import Switch from '$lib/Switch.svelte';
 </script>
 
 <h1>Welcome to Upo</h1>
@@ -27,11 +28,19 @@
 
 <fieldset>
 	<legend>Inputs</legend>
-	<div class="inputs">
+	<div class="horizontal">
 		<Input size="small" />
 		<Input size="medium" />
 		<Input size="large" />
 	</div>
+</fieldset>
+
+<fieldset>
+  <legend>Switches</legend>
+  <div class="horizontal">
+    <Switch label="I like to tap switches" />
+    <Switch label="Hooray, another switch to tap" rounded />
+  </div>
 </fieldset>
 
 <style lang="scss">
@@ -57,7 +66,7 @@
 			margin-left: 12px;
 		}
 
-		& > .inputs > :global(* + *) {
+		& > .horizontal > :global(* + *) {
 			margin-top: 1rem;
 		}
 	}
