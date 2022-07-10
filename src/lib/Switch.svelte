@@ -25,7 +25,7 @@
 		&.rounded > input {
 			&::before,
 			&::after {
-				border-radius: 99px;
+				border-radius: $radius-xlarge;
 			}
 		}
 
@@ -42,7 +42,7 @@
 			&::after {
 				content: '';
 				display: block;
-				border-radius: 4px;
+				border-radius: $radius-small;
 				transition: 0.15s;
         box-sizing: border-box;
 			}

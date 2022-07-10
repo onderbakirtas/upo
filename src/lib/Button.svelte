@@ -18,7 +18,7 @@
 		user-select: none;
 		cursor: pointer;
 		border: 1px solid transparent;
-		border-radius: 0.25rem;
+		border-radius: $radius-small;
 		font-weight: 600;
 		line-height: 1;
 		font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell,

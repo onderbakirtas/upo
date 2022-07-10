@@ -10,9 +10,11 @@
 </div>
 
 <style lang="scss">
+	@import './styles/variables/sizes.scss';
+
 	.box {
 		background-color: white;
-		border-radius: 4px;
+		border-radius: $radius-small;
     box-shadow: 0 5px 20px lightgray;
 
 		&.spacing {

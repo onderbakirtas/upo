@@ -11,6 +11,7 @@
 </div>
 
 <style lang="scss">
+	@import './styles/variables/colors.scss';
 	@import './styles/variables/sizes.scss';
 
 	.input {
@@ -46,8 +47,8 @@
 			display: block;
 			width: 100%;
 			height: 100%;
-			border-radius: 0.25rem;
-			border: 1px solid lightgray;
+			border-radius: $radius-small;
+			border: 1px solid $color-gray;
 			outline: none;
 			font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell,
 				'Open Sans', 'Helvetica Neue', sans-serif;
@@ -59,8 +60,12 @@
 				transition: 0.15s;
 			}
 
+      &:hover {
+        border-color: darken($color: $color-gray, $amount: 15);
+      }
+
 			&:focus {
-				border-color: royalblue;
+				border-color: $color-primary;
 			}
 		}
 	}
