@@ -10,6 +10,7 @@
 
 <style lang="scss">
 	@import './styles/variables/sizes.scss';
+	@import './styles/variables/colors.scss';
 
 	button {
 		display: inline-flex;
@@ -28,7 +29,7 @@
 		}
 
 		&:active {
-			transform: translateY(1px);
+			transform: scale(0.95);
 		}
 
 		&.size {
@@ -57,42 +58,62 @@
 
 		&.is {
 			&-default {
-				background-color: transparent;
+				background-color: $color-gray;
 
 				&:hover {
-					border: 1px solid black;
+					background-color: darken($color: $color-gray, $amount: 5);
 				}
+
+        &:active {
+					background-color: darken($color: $color-gray, $amount: 10);
+        }
 			}
 
 			&-blue {
-				background-color: royalblue;
+				background-color: $color-blue;
 
 				&:hover {
-					background-color: blue;
+					background-color: darken($color: $color-blue, $amount: 5);
+				}
+
+				&:active {
+					background-color: darken($color: $color-blue, $amount: 10);
 				}
 			}
 
 			&-green {
-				background-color: mediumseagreen;
+				background-color: $color-green;
 
 				&:hover {
-					background-color: seagreen;
+					background-color: darken($color: $color-green, $amount: 5);
+				}
+
+				&:active {
+					background-color: darken($color: $color-green, $amount: 10);
 				}
 			}
 
 			&-red {
-				background-color: crimson;
+				background-color: $color-red;
 
 				&:hover {
-					background-color: firebrick;
+					background-color: darken($color: $color-red, $amount: 5);
+				}
+
+				&:active {
+					background-color: darken($color: $color-red, $amount: 10);
 				}
 			}
 
 			&-orange {
-				background-color: tomato;
+				background-color: $color-orange;
 
 				&:hover {
-					background-color: orangered;
+					background-color: darken($color: $color-orange, $amount: 5);
+				}
+
+				&:active {
+					background-color: darken($color: $color-orange, $amount: 10);
 				}
 			}
 		}
