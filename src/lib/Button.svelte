@@ -4,9 +4,10 @@
 	export let text: string;
 	export let size: Size = 'medium';
 	export let theme: Theme = 'default';
+	export let disabled: boolean = false;
 </script>
 
-<button type="button" class={`size-${size} is-${theme}`} on:click>{text}</button>
+<button type="button" class={`size-${size} is-${theme}`} on:click {disabled}>{text}</button>
 
 <style lang="scss">
 	@import './styles/variables/sizes.scss';
@@ -31,6 +32,13 @@
 		&:active {
 			transform: scale(0.95);
 		}
+
+    &:disabled {
+      background-color: $color-bright !important;
+      color: $color-dim;
+      pointer-events: none;
+      cursor: not-allowed;
+    }
 
 		&.size {
 			&-small {
@@ -64,9 +72,9 @@
 					background-color: darken($color: $color-gray, $amount: 5);
 				}
 
-        &:active {
+				&:active {
 					background-color: darken($color: $color-gray, $amount: 10);
-        }
+				}
 			}
 
 			&-blue {

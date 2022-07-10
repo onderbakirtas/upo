@@ -21,6 +21,7 @@
 			<Button text="Red" theme="red" />
 			<Button text="Orange" theme="orange" />
 			<Button text="Default" theme="default" />
+			<Button text="Disabled" disabled />
 		</div>
 	</fieldset>
 
