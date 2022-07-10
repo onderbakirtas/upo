@@ -3,9 +3,10 @@
 
 	export let spacing: Size = 'medium';
 	export let width: string = 'auto';
+	export let radius: Size = 'medium';
 </script>
 
-<div class="box spacing-{spacing}" style:width>
+<div class="box spacing-{spacing} radius-{radius}" style:width>
 	<slot />
 </div>
 
@@ -15,7 +16,29 @@
 	.box {
 		background-color: white;
 		border-radius: $radius-small;
-    box-shadow: 0 5px 20px lightgray;
+		box-shadow: 0 5px 20px lightgray;
+
+    &.radius {
+      &-tiny {
+        border-radius: $radius-tiny;
+      }
+
+      &-small {
+        border-radius: $radius-small;
+      }
+
+      &-medium {
+        border-radius: $radius-medium;
+      }
+
+      &-large {
+        border-radius: $radius-large;
+      }
+
+      &-xlarge {
+        border-radius: $radius-xlarge;
+      }
+    }
 
 		&.spacing {
 			&-tiny {
