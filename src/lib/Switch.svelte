@@ -42,7 +42,7 @@
 			&::after {
 				content: '';
 				display: block;
-				border-radius: $radius-small;
+				border-radius: 4px;
 				transition: 0.15s;
         box-sizing: border-box;
 			}
