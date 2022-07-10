@@ -3,7 +3,9 @@
 	import Button from '$lib/Button.svelte';
 	import Collapse from '$lib/Collapse.svelte';
 	import Input from '$lib/Input.svelte';
+	import Label from '$lib/Label.svelte';
 	import Switch from '$lib/Switch.svelte';
+	import '$lib/styles/core.scss';
 
 	let collapseOpened = false;
 </script>
@@ -37,6 +39,23 @@
 			<Input size="small" />
 			<Input size="medium" />
 			<Input size="large" />
+		</div>
+	</fieldset>
+
+	<fieldset>
+		<legend>Labels</legend>
+		<div class="horizontal">
+			<Label title="Your Name" />
+			<Label
+				title="Your Email"
+				size="large"
+				description="Please enter your email so we can spam you."
+			/>
+			<Label
+				title="Bank Account"
+				description="You need to give money to me, for science!"
+				required
+			/>
 		</div>
 	</fieldset>
 
@@ -102,17 +121,13 @@
 </div>
 
 <style lang="scss">
-	:global(*) {
-		box-sizing: border-box;
-	}
-
 	.collapse-content {
 		margin: 0;
 	}
 
-  .content {
-    padding: 20px 0 100px;
-  }
+	.content {
+		padding: 20px 20px 100px;
+	}
 
 	fieldset {
 		padding: 1rem;
