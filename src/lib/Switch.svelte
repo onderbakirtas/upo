@@ -15,6 +15,7 @@
 
 <style lang="scss">
 	@import './styles/variables/sizes.scss';
+	@import './styles/variables/colors.scss';
 
 	.switch {
 		display: flex;
@@ -48,10 +49,9 @@
 
 			&::before {
 				display: block;
-				width: 37px;
+				width: 35px;
 				height: 20px;
 				background-color: gainsboro;
-        border: 1px solid lightgray;
 				position: relative;
 				z-index: 1;
 			}
@@ -60,22 +60,20 @@
 				height: 14px;
 				width: 14px;
 				background-color: white;
-        border: 1px solid lightgray;
 				position: absolute;
-				left: 3px;
-				top: 3px;
+        left: 0;
+        top: 0;
+        transform: translate(3px, 3px);
 				z-index: 2;
 			}
 
 			&:checked {
 				&::before {
-					background-color: royalblue;
-          border-color: royalblue;
+					background-color: $color-blue;
 				}
 
 				&::after {
-					left: 20px;
-          border-color: transparent;
+          transform: translate(18px, 3px);
 				}
 			}
 		}
