@@ -10,9 +10,8 @@
 	let collapseOpened = false;
 </script>
 
-<h1>Welcome to Upo</h1>
-
 <div class="content">
+	<h1>Welcome to Upo</h1>
 	<fieldset>
 		<legend>Button Themes</legend>
 		<div class="buttons">
