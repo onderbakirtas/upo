@@ -6,6 +6,7 @@
 	import Label from '$lib/Label.svelte';
 	import Switch from '$lib/Switch.svelte';
 	import '$lib/styles/core.scss';
+	import Notification from '$lib/Notification.svelte';
 
 	let collapseOpened = false;
 </script>
@@ -116,6 +117,18 @@
 					autem commodi voluptas ex ducimus est unde voluptatibus ad error! Harum, laborum facere!
 				</div>
 			</Box>
+		</div>
+	</fieldset>
+
+	<fieldset>
+		<legend>Notifications</legend>
+		<div class="horizontal">
+			<Notification title="You are about to release your soul." />
+			<Notification
+				title="Error occured!"
+				description="There are some issues regarding to your login credentials."
+				theme="red"
+			/>
 		</div>
 	</fieldset>
 </div>
