@@ -14,7 +14,9 @@
 			<span class="required">*</span>
 		{/if}
 	</div>
-	<div class="description">{description}</div>
+	{#if description}
+		<div class="description">{description}</div>
+	{/if}
 </div>
 
 <style lang="scss">
@@ -25,10 +27,11 @@
 		display: flex;
 		flex-direction: column;
 		line-height: 1;
+		margin-bottom: 5px;
 
 		&.size {
 			&-tiny {
-				font-size: 9px;
+				font-size: 10px;
 			}
 
 			&-small {
@@ -36,15 +39,15 @@
 			}
 
 			&-medium {
-				font-size: 15px;
+				font-size: 14px;
 			}
 
 			&-large {
-				font-size: 18px;
+				font-size: 16px;
 			}
 
 			&-xlarge {
-				font-size: 21px;
+				font-size: 20px;
 			}
 		}
 
