@@ -1,13 +1,18 @@
 <script lang="ts">
-	import type { Size } from './types';
+	import type { InputType, Size } from './types';
 
 	export let size: Size = 'medium';
 	export let placeholder: string = '';
 	export let value: string = '';
+	export let type: InputType = 'text';
+
+	const handleInput = (e: Event) => {
+		value = (e.target as HTMLInputElement).value;
+	};
 </script>
 
 <div class={`input size-${size}`}>
-	<input type="text" {placeholder} bind:value />
+	<input {type} {placeholder} {value} on:input={handleInput} />
 </div>
 
 <style lang="scss">
@@ -54,15 +59,29 @@
 				'Open Sans', 'Helvetica Neue', sans-serif;
 			font-size: inherit;
 
+			&[type='number']::-webkit-outer-spin-button,
+			&::-webkit-inner-spin-button {
+				appearance: none;
+				margin: 0;
+			}
+
+			&[type='number'] {
+				appearance: none;
+			}
+
+			&::-ms-reveal {
+				display: none;
+			}
+
 			&:hover,
 			&:focus,
 			&:active {
 				transition: 0.15s;
 			}
 
-      &:hover {
-        border-color: darken($color: $color-gray, $amount: 15);
-      }
+			&:hover {
+				border-color: darken($color: $color-gray, $amount: 15);
+			}
 
 			&:focus {
 				border-color: $color-primary;

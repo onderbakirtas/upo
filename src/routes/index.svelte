@@ -37,9 +37,9 @@
 	<fieldset>
 		<legend>Inputs</legend>
 		<div class="horizontal">
-			<Input size="small" />
-			<Input size="medium" />
-			<Input size="large" />
+			<Input size="small" type="text" placeholder="using 'text' type" />
+			<Input size="medium" type="password" placeholder="this one is 'password'" />
+			<Input size="large" type="number" placeholder="i will go with 'number' on this" />
 		</div>
 	</fieldset>
 
