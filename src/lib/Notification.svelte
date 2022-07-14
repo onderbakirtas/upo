@@ -22,10 +22,11 @@
 	.notification {
 		display: flex;
 		align-items: center;
-		padding: 5px;
+		padding: 7.5px;
 		border-radius: 5px;
 		box-shadow: 0 5px 20px lightgray;
-    max-width: 360px;
+    max-width: 90vh;
+    width: 360px;
     min-height: 50px;
 
 		&-bar {
