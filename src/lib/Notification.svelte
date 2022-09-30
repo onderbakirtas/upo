@@ -25,16 +25,16 @@
 		padding: 7.5px;
 		border-radius: 5px;
 		box-shadow: 0 5px 20px lightgray;
-    max-width: 90vh;
-    width: 360px;
-    min-height: 50px;
+		max-width: 90vh;
+		width: 360px;
+		min-height: 50px;
 
 		&-bar {
-      display: block;
+			display: block;
 			align-self: stretch;
-      flex-shrink: 0;
+			flex-shrink: 0;
 			border-radius: 5px;
-      width: 5px;
+			width: 5px;
 
 			&.is {
 				&-blue {
@@ -58,7 +58,7 @@
 		&-content {
 			margin-left: 15px;
 			font-size: 14px;
-      padding: 5px 0;
+			padding: 5px 0;
 
 			& > .title {
 				font-weight: 500;
@@ -66,7 +66,7 @@
 
 			& > .description {
 				color: $color-dim;
-        margin-top: 5px;
+				margin-top: 5px;
 			}
 		}
 	}

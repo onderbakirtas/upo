@@ -33,12 +33,12 @@
 			transform: scale(0.95);
 		}
 
-    &:disabled {
-      background-color: $color-bright !important;
-      color: $color-dim;
-      pointer-events: none;
-      cursor: not-allowed;
-    }
+		&:disabled {
+			background-color: $color-bright !important;
+			color: $color-dim;
+			pointer-events: none;
+			cursor: not-allowed;
+		}
 
 		&.size {
 			&-small {

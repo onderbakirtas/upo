@@ -1,6 +1,6 @@
 <script lang="ts">
 	import { slide, fade } from 'svelte/transition';
-  import { linear } from 'svelte/easing'
+	import { linear } from 'svelte/easing';
 
 	export let open: boolean = false;
 </script>

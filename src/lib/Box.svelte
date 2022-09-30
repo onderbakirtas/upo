@@ -18,27 +18,27 @@
 		border-radius: $radius-small;
 		box-shadow: 0 5px 20px lightgray;
 
-    &.radius {
-      &-tiny {
-        border-radius: $radius-tiny;
-      }
+		&.radius {
+			&-tiny {
+				border-radius: $radius-tiny;
+			}
 
-      &-small {
-        border-radius: $radius-small;
-      }
+			&-small {
+				border-radius: $radius-small;
+			}
 
-      &-medium {
-        border-radius: $radius-medium;
-      }
+			&-medium {
+				border-radius: $radius-medium;
+			}
 
-      &-large {
-        border-radius: $radius-large;
-      }
+			&-large {
+				border-radius: $radius-large;
+			}
 
-      &-xlarge {
-        border-radius: $radius-xlarge;
-      }
-    }
+			&-xlarge {
+				border-radius: $radius-xlarge;
+			}
+		}
 
 		&.spacing {
 			&-tiny {

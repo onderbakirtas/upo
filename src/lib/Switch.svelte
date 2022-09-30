@@ -36,7 +36,7 @@
 		& > input {
 			appearance: none;
 			position: relative;
-      margin: 0;
+			margin: 0;
 
 			&::before,
 			&::after {
@@ -44,7 +44,7 @@
 				display: block;
 				border-radius: 4px;
 				transition: 0.15s;
-        box-sizing: border-box;
+				box-sizing: border-box;
 			}
 
 			&::before {
@@ -61,9 +61,9 @@
 				width: 14px;
 				background-color: white;
 				position: absolute;
-        left: 0;
-        top: 0;
-        transform: translate(3px, 3px);
+				left: 0;
+				top: 0;
+				transform: translate(3px, 3px);
 				z-index: 2;
 			}
 
@@ -73,7 +73,7 @@
 				}
 
 				&::after {
-          transform: translate(18px, 3px);
+					transform: translate(18px, 3px);
 				}
 			}
 		}
